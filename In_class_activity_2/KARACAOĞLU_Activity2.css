@@ -38,8 +38,3 @@ tbody tr:nth-child(even) td
 {
 	background-color: yellow;
 }
-
-.center {
-	margin-left: auto;
-	margin-right: auto;
-  }
