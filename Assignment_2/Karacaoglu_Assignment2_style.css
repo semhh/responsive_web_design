@@ -1,0 +1,28 @@
+input[type="from"]
+{
+    margin-left: 40px;
+}
+
+label
+{
+    margin-left: 2%;
+}
+
+label[id="select-to"]{
+    margin-left: 262px;
+}
+
+output[type="to"]
+{
+    position: absolute;
+    margin-left: 55px;
+    background-color: #D3D3D3;
+    margin-right: 168px;
+}
+
+input[type="submit"]
+{
+    margin-top: 10px;
+    margin-left: 427px;
+}
+
