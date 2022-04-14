@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Karacaoglu_Activity6.css">
+        <script type="text/javascript">
+
+            function change_position(){
+                var left = Math.random()*500+"px";
+                var top = Math.random()*500+"px";
+                var button = document.getElementById("button");
+                button.style.marginLeft = left;
+                button.style.marginTop = top;
+            }
+
+            var scr=0;
+            var level=1;
+            function score(){
+                scr++;
+                if(scr%3==0){
+                    level++;
+                    alert("You are the winner! You can go next level " + level);
+                }   
+            }
+
+            function time_counter(){
+                if(scr <= 3)
+                    setTimeout(change_position,500);
+                else if (scr > 3 && scr <=6)
+                    setTimeout(change_position,400);
+                else if (scr > 6 && scr <=9)
+                    setTimeout(change_position,300);
+                else if (scr > 9 && scr <=12)
+                    setTimeout(change_position,200); 
+                else if (scr > 12 && scr <=15)
+                    setTimeout(change_position,100);
+                else if (scr > 15)
+                    setTimeout(change_position,0);
+            }
+
+        </script>
+    </head>
+    <body>
+        <button id="button" onclick="score()" onmouseover="time_counter()">Click Me</button>
+    </body>
+</html>
